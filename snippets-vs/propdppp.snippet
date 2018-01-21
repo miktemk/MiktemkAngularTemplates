@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>propdp + change callback</Title>
+      <Author>Mikhail Temkine</Author>
+      <Description>Code snippet for a property using DependencyProperty as the backing store</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propdppp</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>Property Type</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>property</ID>
+          <ToolTip>Property Name</ToolTip>
+          <Default>MyProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ownerclass</ID>
+          <ToolTip>The owning class of this Property.  Typically the class that it is declared in.</ToolTip>
+          <Default>ownerclass</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>defaultvalue</ID>
+          <ToolTip>The default value for this property.</ToolTip>
+          <Default>0</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[
+public $type$ $property$
+{
+    get { return ($type$)GetValue($property$Property); }
+    set { SetValue($property$Property, value); }
+}
+
+// Using a DependencyProperty as the backing store for $property$.  This enables animation, styling, binding, etc...
+public static readonly DependencyProperty $property$Property = 
+    DependencyProperty.Register("$property$", typeof($type$), typeof($ownerclass$),
+                new FrameworkPropertyMetadata($defaultvalue$, FrameworkPropertyMetadataOptions.AffectsRender, On$property$PropertyChanged));
+
+private static void On$property$PropertyChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+{
+    var control = sender as $ownerclass$;
+    if (control != null)
+        control.On$property$Changed(($type$)e.OldValue, ($type$)e.NewValue);
+}
+
+private void On$property$Changed($type$ oldValue, $type$ newValue)
+{
+    
+}
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

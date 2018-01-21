@@ -1,0 +1,25 @@
+{
+	"Print to console": {
+		"prefix": "cxzxc",
+		"body": [
+			"console.log(`$1`);"
+		],
+		"description": "Log output to console"
+	},
+	"ddd": {
+		"prefix": "ddd",
+		"body": [
+			"debugger;"
+		],
+		"description": "debugger;"
+	},
+	"tttt": {
+		"prefix": "tttt",
+		"body": [
+			"setTimeout(() => {",
+			"  $1",
+			"}, 1000);"
+		],
+		"description": "setTimeout stub"
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"screens": {
+		"prefix": "screens",
+		"body": [
+			"// 0 - 320px",
+			"@media (max-width:320px)  {}",
+			"// 320px - 768px",
+			"@media (min-width:320px) and (max-width : 768px)  {}",
+			"// 768px - 1024px",
+			"@media (min-width:768px) and (max-width : 1024px)  {}",
+			"// 1024px - 1281px",
+      "@media (min-width:1024px) and (max-width : 1281px) {}",
+      "// 1281px +",
+			"@media (min-width:1281px) {}"
+		],
+		"description": "a set of media queries for device. See https://stackoverflow.com/questions/16704243/widths-to-use-in-media-queries"
+	},
+	"screens2": {
+		"prefix": "screens2",
+		"body": [
+			"// smartphones, iPhone, portrait 480x320 phones",
+			"@media (min-width:320px) {}",
+			"// portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.",
+			"@media (min-width:481px) {}",
+			"// portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones",
+			"@media (min-width:641px) {}",
+			"// tablet, landscape iPad, lo-res laptops ands desktops",
+			"@media (min-width:961px) {}",
+			"// big landscape tablets, laptops, and desktops",
+			"@media (min-width:1025px) {}",
+			"// hi-res laptops and desktops",
+			"@media (min-width:1281px) {}"
+		],
+		"description": "a set of media queries for device. See https://stackoverflow.com/questions/16704243/widths-to-use-in-media-queries"
+	},
+	"bsgrid": {
+		"prefix": "bsgrid",
+		"body": [
+			".grid-row {",
+			"  &::after {",
+			"    clear:both;",
+			"    display: table;",
+			"    content: \" \";",
+			"  }",
+			"  .grid-cell {",
+			"    position: relative;",
+			"    float: left;",
+			"    //width: 200px;",
+			"  }",
+			"}"
+		],
+		"description": "except for the width the following is an immitation of BS grid"
+	}
+}
