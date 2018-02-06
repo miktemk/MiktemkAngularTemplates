@@ -1,0 +1,36 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "workbench.iconTheme": "easy-icons",
+    "editor.wordSeparators": "`~!-@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "[less]": {
+        "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+        "editor.tabSize": 2
+    },
+    "[scss]": {
+      "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+      "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "window.zoomLevel": -1,
+    "vsicons.projectDetection.disableDetect": true,
+    "typescript.check.tscVersion": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.renderWhitespace": "all",
+    "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressUpdateNotice": false,
+      "suppressWelcomeNotice": true
+    },
+    "gitlens.codeLens.enabled": false,
+    "gitlens.blame.line.enabled": false,
+    "window.title": "${rootName} | ${dirty} ${activeEditorShort} | ${appName}"
+  }
