@@ -74,6 +74,24 @@
 			"<button class=\"btn btn-${1:default,primary,secondary,info,warning,danger}\">$2</button>"
 		],
 		"description": "boostrap button"
+  },
+  "flex-group": {
+		"prefix": "flex-group",
+		"body": [
+			"<div class=\"flex-group\">",
+      "  <div class=\"lhs-addon\">",
+      "  </div>",
+      "  <div class=\"main-content\" >",
+      "    <div class=\"flex-content-vcenter\">",
+      "    </div>",
+      "  </div>",
+      "  <div class=\"rhs-addon\">",
+      "    <div class=\"flex-content-vcenter\">",
+      "    </div>",
+      "  </div>",
+      "</div>",
+		],
+		"description": "boostrap button"
 	},
 	"mdd-input": {
 		"prefix": "mdd-input",
