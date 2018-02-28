@@ -15,6 +15,14 @@
     "[html]": {
         "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
     },
+    "[typescript]": {
+      "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+      "editor.tabSize": 2
+    },
+    "[json]": {
+      "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+      "editor.tabSize": 2
+    },
     "window.zoomLevel": -1,
     "vsicons.projectDetection.disableDetect": true,
     "typescript.check.tscVersion": false,
@@ -32,5 +40,7 @@
     },
     "gitlens.codeLens.enabled": false,
     "gitlens.blame.line.enabled": false,
-    "window.title": "${rootName} | ${dirty} ${activeEditorShort} | ${appName}"
+    "window.title": "${rootName} | ${dirty} ${activeEditorShort} | ${appName}",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.enabled": false
   }

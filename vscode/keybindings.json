@@ -45,5 +45,13 @@
     {
       "key": "ctrl+shift+u",
       "command": "miktemk.generateShortGuid"
+    },
+    {
+      "key": "ctrl+shift+d",
+      "command": "-workbench.view.debug"
+    },
+    {
+      "key": "ctrl+shift+d",
+      "command": "editor.action.copyLinesDownAction"
     }
   ]

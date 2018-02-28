@@ -1,84 +1,111 @@
 {
 /*
-	// Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	"Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
+  // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  // Example:
+  "Print to console": {
+    "prefix": "log",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
+  }
 */
-	"debug-json-0": {
-		"prefix": "djj",
-		"body": [
-			"<pre>{{ $1 | json }}</pre>"
-		],
-		"description": "djj | json"
-	},
-	"debug-json-title": {
-		"prefix": "djj2",
-		"body": [
-			"<pre>${2:title}:{{ $1 | json }}</pre>"
-		],
-		"description": "djj | json"
-	},
-	"debug-json": {
-		"prefix": "djjj",
-		"body": [
-			"<pre ng-bind-html=\"$1 | json | simpleHighlight: '${2:somestr}'\"></pre>"
-		],
-		"description": "djjj | json"
-	},
-	"debug-json2": {
-		"prefix": "djjj2",
-		"body": [
-			"<div simple-collapse=\"$1\" is-collapsed=\"false\">",
-			"    <pre ng-bind-html=\"$1 | json | simpleHighlight: '${3:somestr}'\"></pre>",
-        	"</div>"
-		],
-		"description": "djjj2 | json"
-	},
-	"debug-json3": {
-		"prefix": "djjj3",
-		"body": [
-			"<textarea readonly=\"readonly\" class=\"debug-panel-floating scrollbox\" select-on-click>{{ $1 | json }}</textarea>"
-		],
-		"description": "djjj3 | json"
-	},
-	"bsrow": {
-		"prefix": "bsrow",
-		"body": [
-			"<div class=\"row\">",
-			"  <div class=\"col-md-4\">",
-			"    $1",
-			"  </div>",
-			"  <div class=\"col-md-4\">",
-			"    ",
-			"  </div>",
-			"  <div class=\"col-md-4\">",
-			"    ",
-			"  </div>",
-			"</div>"
-		],
-		"description": "boostrap row with 3 cells"
-	},
-	"bsbtn": {
-		"prefix": "bsbtn",
-		"body": [
-			"<button class=\"btn btn-${1:default,primary,secondary,info,warning,danger}\">$2</button>"
-		],
-		"description": "boostrap button"
+  "debug-json-0": {
+    "prefix": "djj",
+    "body": [
+      "<pre>{{ $1 | json }}</pre>"
+    ],
+    "description": "djj | json"
   },
+  "debug-json-title": {
+    "prefix": "djj2",
+    "body": [
+      "<pre>${2:title}:{{ $1 | json }}</pre>"
+    ],
+    "description": "djj | json"
+  },
+  "debug-json": {
+    "prefix": "djjj",
+    "body": [
+      "<pre ng-bind-html=\"$1 | json | simpleHighlight: '${2:somestr}'\"></pre>"
+    ],
+    "description": "djjj | json"
+  },
+  "debug-json2": {
+    "prefix": "djjj2",
+    "body": [
+      "<div simple-collapse=\"$1\" is-collapsed=\"false\">",
+      "    <pre ng-bind-html=\"$1 | json | simpleHighlight: '${3:somestr}'\"></pre>",
+          "</div>"
+    ],
+    "description": "djjj2 | json"
+  },
+  "debug-json3": {
+    "prefix": "djjj3",
+    "body": [
+      "<textarea readonly=\"readonly\" class=\"debug-panel-floating scrollbox\" select-on-click>{{ $1 | json }}</textarea>"
+    ],
+    "description": "djjj3 | json"
+  },
+  "bsrow": {
+    "prefix": "bsrow",
+    "body": [
+      "<div class=\"row\">",
+      "  <div class=\"col-md-4\">",
+      "    $1",
+      "  </div>",
+      "  <div class=\"col-md-4\">",
+      "    ",
+      "  </div>",
+      "  <div class=\"col-md-4\">",
+      "    ",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "boostrap row with 3 cells"
+  },
+  "bsbtn": {
+    "prefix": "bsbtn",
+    "body": [
+      "<button class=\"btn btn-${1:default,primary,secondary,info,warning,danger}\">$2</button>"
+    ],
+    "description": "boostrap button"
+  },
+  "bstable": {
+    "prefix": "bstable",
+    "body": [
+      "<table class=\"table table-striped table-hover\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th>#</th>",
+      "      <th>Name</th>",
+      "      <th></th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr *ngFor=\"let item of list; let i=index\">",
+      "      <td>{{ i+1 }}</td>",
+      "      <td>{{ item.name }}</td>",
+      "      <td class=\"text-center\">",
+      "        <span class=\"delete-icon-container\" (click)=\"deleteItem(item); $event.stopPropagation();\">",
+      "          <i class=\"fa fa-trash-o\" aria-hidden=\"true\"></i>",
+      "        </span>",
+      "      </td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+    ],
+    "description": "boostrap button"
+  },
+  
   "flex-group": {
-		"prefix": "flex-group",
-		"body": [
-			"<div class=\"flex-group\">",
+    "prefix": "flex-group",
+    "body": [
+      "<div class=\"flex-group\">",
       "  <div class=\"lhs-addon\">",
       "  </div>",
       "  <div class=\"main-content\" >",
@@ -90,21 +117,21 @@
       "    </div>",
       "  </div>",
       "</div>",
-		],
-		"description": "boostrap button"
-	},
-	"mdd-input": {
-		"prefix": "mdd-input",
-		"body": [
-			"<div class=\"form-group\">",
-			"  <md-input-container class=\"example-full-width\">",
-			"    <input mdInput type=\"text\" placeholder=\"$1\" name=\"$3\" [(ngModel)]=\"$2\" #$3=\"ngModel\" required />",
-			"    <md-error *ngIf=\"!$3.valid\">",
-			"      $1 is <strong>required</strong>",
-			"    </md-error>",
-			"  </md-input-container>",
-			"</div>"
-		],
-		"description": "boostrap button"
-	}
+    ],
+    "description": "boostrap button"
+  },
+  "mdd-input": {
+    "prefix": "mdd-input",
+    "body": [
+      "<div class=\"form-group\">",
+      "  <md-input-container class=\"example-full-width\">",
+      "    <input mdInput type=\"text\" placeholder=\"$1\" name=\"$3\" [(ngModel)]=\"$2\" #$3=\"ngModel\" required />",
+      "    <md-error *ngIf=\"!$3.valid\">",
+      "      $1 is <strong>required</strong>",
+      "    </md-error>",
+      "  </md-input-container>",
+      "</div>"
+    ],
+    "description": "boostrap button"
+  }
 }

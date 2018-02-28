@@ -1,39 +1,96 @@
 {
-	"Print to console": {
-		"prefix": "cxzxc",
-		"body": [
-			"console.log(`$1`);"
-		],
-		"description": "Log output to console"
-	},
-	"ddd": {
-		"prefix": "ddd",
-		"body": [
-			"debugger;"
-		],
-		"description": "debugger;"
-	},
-	"ddds": {
-		"prefix": "ddds",
-		"body": [
-			"console.log(`DDDDDDDDebug here!!!!!!!!!`);"
-		],
-		"description": "console.log(`!!!!!!`);"
-	},
-	"tttt": {
-		"prefix": "tttt",
-		"body": [
-			"setTimeout(() => {",
-			"  $1",
-			"}, 1000);"
-		],
-		"description": "setTimeout stub"
+  "Print to console": {
+    "prefix": "cxzxc",
+    "body": [
+      "console.log(`$1`);"
+    ],
+    "description": "Log output to console"
+  },
+  "ddd": {
+    "prefix": "ddd",
+    "body": [
+      "debugger;"
+    ],
+    "description": "debugger;"
+  },
+  "ddds": {
+    "prefix": "ddds",
+    "body": [
+      "console.log(`DDDDDDDDebug here!!!!!!!!!`);"
+    ],
+    "description": "console.log(`!!!!!!`);"
+  },
+  "tttt": {
+    "prefix": "tttt",
+    "body": [
+      "setTimeout(() => {",
+      "  $1",
+      "}, 1000);"
+    ],
+    "description": "setTimeout stub"
   },
   "ctor": {
-		"prefix": "ctor",
-		"body": [
-			"constructor() {$1}"
-		],
-		"description": "constructor"
-	},
+    "prefix": "ctor",
+    "body": [
+      "constructor() {$1}"
+    ],
+    "description": "constructor"
+  },
+  "ngmodel2": {
+    "prefix": "ngmodel2",
+    "body": [
+      "@Input()",
+      "$1:$2;",
+      "@Output()",
+      "$1Change = new EventEmitter<$2>();",
+    ],
+    "description": "2 way data binding code for ngx component (similar to ngModel)"
+  },
+  "ngmodel22": {
+    "prefix": "ngmodel22",
+    "body": [
+      "@Output()",
+      "$1Change = new EventEmitter<$2>();",
+      "@Input()",
+      "get $1(): $2 {",
+      "  return this._$1;",
+      "}",
+      "set $1(val: $2) {",
+      "  this._$1 = val;",
+      "  this.$1Change.emit(this._$1);",
+      "}",
+      "private _$1:$2;",
+    ],
+    "description": "2 way data binding code (with backup property) for ngx component (similar to ngModel)"
+  },
+  "nginput22": {
+    "prefix": "nginput22",
+    "body": [
+      "@Input()",
+      "get $1(): $2 {",
+      "  return this._$1;",
+      "}",
+      "set $1(val: $2) {",
+      "  this._$1 = val;",
+      "}",
+      "private _$1:$2;",
+    ],
+    "description": "@Input with get, set and a backing property"
+  },
+  "ngpipe": {
+    "prefix": "ngpipe",
+    "body": [
+      "@Pipe({",
+      "  name: '$1'",
+      "})",
+      "export class Pipe_$1 implements PipeTransform {",
+      "  transform(value: any): any {",
+      "    return value;",
+      "  }",
+      "}"
+    ],
+    "description": "starter pipe"
+  }
+
+
 }
