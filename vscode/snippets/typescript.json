@@ -90,7 +90,15 @@
       "}"
     ],
     "description": "starter pipe"
+  },
+  "import-gtarest": {
+    "prefix": "import-gtarest",
+    "body": [
+      "import * as GTARest from 'core/gen/gta-rest.service';"
+    ],
+    "description": "import * as GTARest from 'core/gen/gta-rest.service';"
   }
+  
 
 
 }

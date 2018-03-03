@@ -120,8 +120,8 @@
     ],
     "description": "boostrap button"
   },
-  "mdd-input": {
-    "prefix": "mdd-input",
+  "mdd-input-old": {
+    "prefix": "mdd-input-old",
     "body": [
       "<div class=\"form-group\">",
       "  <md-input-container class=\"example-full-width\">",
@@ -132,6 +132,35 @@
       "  </md-input-container>",
       "</div>"
     ],
-    "description": "boostrap button"
+    "description": "mdInput wrapped in class=form-group"
+  },
+  "mdd-input-RF-hgb": {
+    "prefix": "mdd-input-RF-hgb",
+    "body": [
+      "<mat-form-field>",
+      "  <input name=\"$1\" matInput placeholder=\"$2\" [formControl]=\"$1\" >",
+      "  <mat-error *ngIf=\"$1.errors\">",
+      "    {{ $1.errors | hgbValidationFirstError:'$2' }}",
+      "  </mat-error>",
+      "</mat-form-field>"
+    ],
+    "description": "mdInput for reactive forms (RF)"
+  },
+  "mdd-select-RF-hgb": {
+    "prefix": "mdd-select-RF-hgb",
+    "body": [
+      "<mat-form-field>",
+      "  <mat-select placeholder=\"$2\" [formControl]=\"$1\">",
+      "    <mat-option *ngFor=\"let item of $3\" [value]=\"item.id \">",
+      "      {{ item.name }}",
+      "    </mat-option>",
+      "  </mat-select>",
+      "  <mat-error *ngIf=\"$1.errors\">",
+      "    {{ $1.errors | hgbValidationFirstError:'$2' }}",
+      "  </mat-error>",
+      "</mat-form-field>"
+    ],
+    "description": "mat-select for reactive forms (RF)"
   }
+
 }
