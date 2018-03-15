@@ -1,10 +1,17 @@
 {
-  "Print to console": {
+  "cxzxc": {
     "prefix": "cxzxc",
     "body": [
       "console.log(`$1`);"
     ],
     "description": "Log output to console"
+  },
+  "cxzxc-debugger": {
+    "prefix": "ccc",
+    "body": [
+      "console.log('debugger;');"
+    ],
+    "description": "Log debugger; to console"
   },
   "ddd": {
     "prefix": "ddd",
@@ -97,6 +104,31 @@
       "import * as GTARest from 'core/gen/gta-rest.service';"
     ],
     "description": "import * as GTARest from 'core/gen/gta-rest.service';"
+  },
+  "import-lodash": {
+    "prefix": "import-lodash",
+    "body": [
+      "import * as _ from 'lodash';"
+    ],
+    "description": "import * as _ from 'lodash';"
+  },
+  "import-moment": {
+    "prefix": "import-moment",
+    "body": [
+      "import * as moment from 'moment';"
+    ],
+    "description": "import * as moment from 'moment';"
+  },
+  "hgb-dialog-confirm": {
+    "prefix": "hgb-dialog-confirm",
+    "body": [
+      "this.hgbDialogService.openConfirmDialog('Decline', 'Your are about to decline this itinerary. Proceed?').then(dialogResult => {",
+      "  if (dialogResult.type != HgbDialogResultType.OK)",
+      "    return;",
+      "  //...",
+      "});"
+    ],
+    "description": "hgbDialogService.openConfirmDialog..."
   }
   
 

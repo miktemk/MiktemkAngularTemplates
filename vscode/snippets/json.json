@@ -24,6 +24,15 @@
       "  \"description\": \"$1 description_TODO\"",
       "}"
     ],
-    "description": "starter pipe"
-  }
+    "description": "snippet starter"
+  },
+  "JSON.createObject": {
+		"prefix": "obj",
+		"body": [
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "Create JSON object."
+	}
 }

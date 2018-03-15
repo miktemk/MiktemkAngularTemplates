@@ -23,6 +23,10 @@
       "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
       "editor.tabSize": 2
     },
+    "[markdown]": {
+      "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+      "editor.tabSize": 2
+    },
     "window.zoomLevel": -1,
     "vsicons.projectDetection.disableDetect": true,
     "typescript.check.tscVersion": false,
@@ -42,5 +46,26 @@
     "gitlens.blame.line.enabled": false,
     "window.title": "${rootName} | ${dirty} ${activeEditorShort} | ${appName}",
     "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.enabled": false
+    "gitlens.hovers.currentLine.enabled": false,
+    "beautify.config": {
+      "indent_size": 2,
+      "indent_char": " ",
+      "indent_with_tabs": false,
+      "selector-separator-newline": true,
+      "newline-between-rules": true,
+      "preserve_newlines": true,
+      "max_preserve_newlines": 99999
+    },
+    "beautify.language": {
+      "js": {
+        "type": ["javascript", "json"],
+        "filename": [".jshintrc", ".jsbeautifyrc"]
+        // "ext": ["js", "json"]
+        // ^^ to set extensions to be beautified using the javascript beautifier
+      },
+      "css": ["css", "scss", "less"],
+      "html": ["htm", "html"]
+      // ^^ providing just an array sets the VS Code file type
+    },
+    "gitlens.keymap": "alternate",
   }
