@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cmdkey /delete:git:https://github.com
+rm -rf $USERPROFILE\\.git-credentials

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Note:
+
+ - <md-highlight lines="2,3" /> ]]></content>
+	<tabTrigger>mdnotes</tabTrigger>
+    <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+    <description>snippet for post-code notes used for MD animation</description>
+</snippet>

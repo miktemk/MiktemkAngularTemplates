@@ -1,0 +1,40 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: miktemk Verbi
+scopeName: source.syntax_name
+fileTypes: [verbi,paroli]
+uuid: 95355918-d1c0-451a-93c3-10b139fd55bd
+
+patterns:
+- comment: comments after a hash
+  name: comment
+  match: \#.*
+
+- comment: standard verbi keywords
+  match: \b(CONFIGURE|alias|SECTION|structure|inline|input)\b
+  captures:
+    '1': {name: keyword}
+
+- comment: star is all matcher
+  name: star
+  match: \*|\^
+
+- comment: tense (inden)
+  match: ^(    |\t)+([a-zA-Z\-_]+)
+  captures:
+    '2': {name: keyword2}
+
+# - comment: tense (inden)
+#   match: ^(    |\t)+([a-zA-Z\-_]+)[^a-zA-Z\-_]+[a-zA-Z\-_]+
+#   captures:
+#     '2': {name: keyword2}
+
+# - comment: tense (inden)
+#   match: ^(    |\t)+([a-zA-Z\-_]+)\:
+#   captures:
+#     '2': {name: keyword2}
+
+- comment: function calls (in sq brackets)
+  match: \[(.*?)\]
+  captures:
+    '1': {name: keyword3}

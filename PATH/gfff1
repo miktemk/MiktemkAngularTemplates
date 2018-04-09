@@ -1,0 +1,2 @@
+#!/bin/sh
+git difftool HEAD^ HEAD $1

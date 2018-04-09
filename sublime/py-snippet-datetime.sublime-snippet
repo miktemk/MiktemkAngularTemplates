@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+# .... datetime, int padding, date label, timedelta, weekend check
+${1:today} = datetime.date.${1:today}()
+${2:tomorrow} = ${1:today} + datetime.timedelta(days=1)
+${1:today}Label = "{0}_{1}_{2}".format(${1:today}.year, str(${1:today}.month).zfill(2), str(${1:today}.day).zfill(2))
+weekendTest = set([5, 6])
+weekdayTest = set(range(5))
+if ${1:today}.weekday() in weekdayTest:
+	print ("${1:today} is workday")
+if ${2:tomorrow}.weekday() in weekendTest:
+	print ("Yeay! ${2:tomorrow} is weekend!!! TGIF I guess...")
+if ${2:tomorrow}.weekday() == 0:
+	print ("Boo! ${2:tomorrow} is monday...")
+]]></content>
+	<tabTrigger>pydatetime</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's datetime sample</description>
+</snippet>

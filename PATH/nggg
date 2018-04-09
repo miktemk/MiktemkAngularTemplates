@@ -1,0 +1,3 @@
+#!/bin/sh
+
+START ng serve -o

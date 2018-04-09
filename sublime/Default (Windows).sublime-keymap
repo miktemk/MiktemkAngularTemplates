@@ -1,0 +1,39 @@
+[
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+	{ "keys": ["ctrl+shift+x"], "command": "exec", "args": {"kill": "true"}},
+
+	{ "keys": ["ctrl+k", "ctrl+x"], "command": "hex_viewer" },
+
+	{ "keys": [ "ctrl+alt+c", "ctrl+alt+c" ], "command": "camel_case_to_spaces" },
+
+	{ "keys": [ "ctrl+alt+c", "ctrl+alt+f" ], "command": "delete_all_lines_not_containing" },
+	
+	// MDA
+	{ "keys": [ "ctrl+alt+m", "ctrl+alt+n" ], "command": "markdown_animator_insert_token_note" },
+	{ "keys": [ "ctrl+alt+m", "ctrl+alt+b" ], "command": "markdown_animator_highlight" },
+
+	{ "keys": [ "ctrl+shift+c", "ctrl+shift+v" ], "command": "chew_my_text" },
+
+	{ "keys": [ "ctrl+shift+c", "ctrl+shift+c" ], "command": "copy_to_clipboard_whats_between_backquotes" },
+
+	{ "keys": [ "ctrl+shift+e", "ctrl+shift+s" ], "command": "chew_my_text_mda_regex_escape" },
+
+	{ "keys": ["ctrl+k", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+	
+	// tmp
+	{ "keys": [ "ctrl+alt+l" ], "command": "find_latinica_errors" },
+	
+
+	// { "keys":["ctrl+shift+b"] , 
+	//     "caption": "SublimeREPL: Python - RUN current file",
+	//     "command": "run_existing_window_command", 
+	//     "args":
+	//         {
+	//             "id": "repl_python_run",
+	//             "file": "config/Python/Main.sublime-menu",
+	//             : ""
+	//         }
+    //    },
+
+]

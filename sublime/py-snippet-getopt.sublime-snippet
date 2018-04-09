@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+# .... Get command line arguments and options with getopt
+# .... Example: blah.py -${1:i} ${2:optInput} -${3:o} ${4:optOutput}
+optlist, args = getopt.getopt(sys.argv[1:], "${1:i}:${3:o}:")
+${5:optlistDict} = dict(optlist)
+#print(${5:optlistDict})
+arg1 = args[0]
+arg2 = args[1]
+${2:optInput} = None if '-${1:i}' not in ${5:optlistDict} else ${5:optlistDict}['-${1:i}']
+${4:optOutput} = None if '-${3:o}' not in ${5:optlistDict} else ${5:optlistDict}['-${3:o}']
+# TODO: add argumentless options
+]]></content>
+	<tabTrigger>pygetopt</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's get command line arguments and options with getopt</description>
+</snippet>

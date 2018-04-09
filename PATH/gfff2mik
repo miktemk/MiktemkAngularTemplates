@@ -1,0 +1,2 @@
+#!/bin/sh
+git difftool $(git merge-base mikhail HEAD) HEAD $1

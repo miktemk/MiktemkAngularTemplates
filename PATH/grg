@@ -1,0 +1,2 @@
+#!/bin/sh
+git co --ours $1

@@ -1,0 +1,11 @@
+{
+	"variants": [
+        { "name": "Test just output text",
+          "cmd": ["verbi-test.bat", "$file"],
+        },
+
+        { "name": "Run UI",
+          "cmd": ["verbi-drill.bat", "$file"],
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+# .... list directory contents
+${1:dirname} = ${2:"."}
+for ${3:fname} in os.listdir(${1:dirname}):
+	# .... skip this python script
+	if ${3:fname} == os.path.basename(__file__):
+		continue
+	fullPath = os.path.join(${1:dirname}, ${3:fname})
+	if os.path.isdir(fullPath):
+		print("dir", fullPath)
+	else:
+		print("file", fullPath)
+]]></content>
+	<tabTrigger>pylistdir</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's list directory contents</description>
+</snippet>

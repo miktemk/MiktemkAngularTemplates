@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>WernickeForSublime</string>
+    <key>settings</key>
+    <array>
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#EEEEEEEB</string>
+                <key>caret</key>
+                <string>#000000</string>
+                <key>foreground</key>
+                <string>#000000</string>
+                <key>invisibles</key>
+                <string>#B3B3B3F4</string>
+                <key>lineHighlight</key>
+                <string>#0000001A</string>
+                <key>selection</key>
+                <string>#BAD6FD</string>
+                <key>findHighlight</key>
+                <string>#bb8822</string>
+                <key>findHighlightForeground</key>
+                <string>#ffffff</string>
+                <key>inactiveSelection</key>
+                <string>#ff7e00</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Comments #################</string>
+            <key>scope</key>
+            <string>comment</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string></string>
+                <key>foreground</key>
+                <string>#aaa</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Keyword 1111111111111111</string>
+            <key>scope</key>
+            <string>keyword</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+                <key>foreground</key>
+                <string>#c44</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Keyword 2222222222222</string>
+            <key>scope</key>
+            <string>keyword2</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#32b1d1</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Keyword 3333333333333</string>
+            <key>scope</key>
+            <string>keyword3</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#4c4</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>WWWWWWWWWWWWordform specification, i.e. (tense=impf,face=io)</string>
+            <key>scope</key>
+            <string>wordform</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#99e</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>WWWWWWWWWWWWordform brackets themselves, i.e. ((( ... )))</string>
+            <key>scope</key>
+            <string>wordformBrackets</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>italic</string>
+                <key>foreground</key>
+                <string>#12687c</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>subtemplate ---------------- AKA [wantto]</string>
+            <key>scope</key>
+            <string>subtemplateCall</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+                <key>foreground</key>
+                <string>#6868b7</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>when a $var is declared in phrasi file, i.e. $p1 = [pronoun]</string>
+            <key>scope</key>
+            <string>vardeclare</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ff66c6</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Star ******************</string>
+            <key>scope</key>
+            <string>star</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+                <key>foreground</key>
+                <string>#ff993f</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>bbbbbbbbbbbbbbbbbbold!!!!!!!</string>
+            <key>scope</key>
+            <string>justbold</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+        
+    </array>
+    <key>uuid</key>
+    <string>8A8D06A9-B0D5-4A47-BDB1-D27C30D020B5</string>
+</dict>
+</plist>

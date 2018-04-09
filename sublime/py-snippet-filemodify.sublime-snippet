@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+# .... read the whole file into a string (UTF-8). Save line endings
+${1:fileIn} = open(${2:fname}, encoding="utf8")
+${3:text} = ${1:fileIn}.read()
+${1:fileIn}_newlines = ${1:fileIn}.newlines
+${1:fileIn}.close()
+
+# .... change something
+${3:text} = ${3:text}.replace(${4:"bob"}, ${5:"alice"})
+
+# .... write string to file (UTF-8). Apply previous file's line endings
+${6:fileOut} = open(${2:fname}, "w", encoding="utf8", newline=${1:fileIn}_newlines)	
+${6:fileOut}.write(${3:text})
+${6:fileOut}.close()
+]]></content>
+	<tabTrigger>pyfilemodify</tabTrigger>
+    <scope>source.python</scope>
+    <description>= pyfileread + change something + pyfilewrite. NOTE: Preserves line endings.</description>
+</snippet>

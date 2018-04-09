@@ -1,0 +1,1 @@
+verbi -n=500 -o=zzztest.txt -v %1

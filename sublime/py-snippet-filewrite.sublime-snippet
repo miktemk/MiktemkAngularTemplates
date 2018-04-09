@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+# .... write string to file (UTF-8)
+${1:fileOut} = open(${2:fnameOut}, "w", encoding="utf8")	
+${1:fileOut}.write(${3:text})
+${1:fileOut}.close()
+]]></content>
+	<tabTrigger>pyfilewrite</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's write string to file (UTF-8)</description>
+</snippet>

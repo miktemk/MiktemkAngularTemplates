@@ -29,7 +29,7 @@
     },
     "window.zoomLevel": -1,
     "vsicons.projectDetection.disableDetect": true,
-    "typescript.check.tscVersion": false,
+    //"typescript.check.tscVersion": false,
     "vsicons.dontShowNewVersionMessage": true,
     "editor.renderWhitespace": "all",
     "gitlens.advanced.messages": {
@@ -39,11 +39,13 @@
       "suppressGitVersionWarning": false,
       "suppressLineUncommittedWarning": false,
       "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true,
       "suppressUpdateNotice": false,
       "suppressWelcomeNotice": true
     },
     "gitlens.codeLens.enabled": false,
-    "gitlens.blame.line.enabled": false,
+    //"gitlens.blame.line.enabled": false,
     "window.title": "${rootName} | ${dirty} ${activeEditorShort} | ${appName}",
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.enabled": false,

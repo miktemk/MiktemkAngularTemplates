@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+print("${1:}", ${2:None})
+]]></content>
+	<tabTrigger>pyppp</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's print statement</description>
+</snippet>

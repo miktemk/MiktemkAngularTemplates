@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<mdmm sc="${1:explained}" />]]></content>
+	<tabTrigger>mdmmsc</tabTrigger>
+    <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+    <description>&lt;mdmm a="hello" /&gt; shortcut for standard text MD animation</description>
+</snippet>

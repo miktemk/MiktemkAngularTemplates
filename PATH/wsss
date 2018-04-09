@@ -1,0 +1,4 @@
+#!/bin/sh
+
+START ws
+START grunt watch

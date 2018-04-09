@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<md-highlight lines="${1:}" /> ]]></content>
+	<tabTrigger>mdmml</tabTrigger>
+    <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+    <description>&lt;md-highlight lines="9" /&gt; used for MD animation</description>
+</snippet>

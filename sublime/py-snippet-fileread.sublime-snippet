@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+# .... read the whole file into a string (UTF-8)
+${1:fileIn} = open(${2:fnameIn}, encoding="utf8")
+${3:text} = ${1:fileIn}.read()
+#lines = ${1:fileIn}.readlines() # .... or read everything into array of lines
+${1:fileIn}.close()
+]]></content>
+	<tabTrigger>pyfileread</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's read the whole file into a string (UTF-8)</description>
+</snippet>

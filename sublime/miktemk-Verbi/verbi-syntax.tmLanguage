@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>verbi</string>
+		<string>paroli</string>
+	</array>
+	<key>name</key>
+	<string>miktemk Verbi</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>comments after a hash</string>
+			<key>match</key>
+			<string>\#.*</string>
+			<key>name</key>
+			<string>comment</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>standard verbi keywords</string>
+			<key>match</key>
+			<string>\b(CONFIGURE|alias|SECTION|structure|inline|input)\b</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>star is all matcher</string>
+			<key>match</key>
+			<string>\*|\^</string>
+			<key>name</key>
+			<string>star</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword2</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>tense (inden)</string>
+			<key>match</key>
+			<string>^(    |\t)+([a-zA-Z\-_]+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>function calls (in sq brackets)</string>
+			<key>match</key>
+			<string>\[(.*?)\]</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.syntax_name</string>
+	<key>uuid</key>
+	<string>95355918-d1c0-451a-93c3-10b139fd55bd</string>
+</dict>
+</plist>

@@ -1,0 +1,89 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+
+name: hgb Wernicke
+scopeName: source.syntax_name
+fileTypes: [wernrules, werntrans]
+uuid: 88eb4baa-abdb-4a28-9012-804680bb7b04
+
+patterns:
+- comment: comments after a hash
+  name: comment
+  match: \#.*
+
+- comment: embedded properties AKA x=y
+  match: ^(    |\t)(    |\t)(\w+\s*=\s*\w+)
+  captures:
+    '3': {name: keyword3}
+
+- comment: standard verbi keywords
+  match: \b(MAIN)\b
+  captures:
+    '1': {name: keyword}
+
+# - comment: non-tabbed word means
+#   match: ^\w.*
+#   captures:
+#     '0': {name: justbold}
+
+#------------------- phrasi line ------------------------
+
+# - comment: variable declarations AKA $x=[asd]
+#   match: ^(    |\t)(\$\w+)\s*=
+#   captures:
+#     '2': {name: vardeclare}
+
+- comment: optional subtemplate call AKA [noun](---)?
+  match: \[(.*?)\]\(([^)]*?)\)\?
+  captures:
+    '0': {name: comment}
+    '1': {name: subtemplateCall}
+    '2': {name: wordform}
+
+- comment: optional subtemplate call AKA word(---)?
+  match: \$?\w+?\(([^)]*?)\)\?
+  captures:
+    '0': {name: comment}
+    '1': {name: wordform}
+
+- comment: optional subtemplate call AKA [noun]?
+  match: \[(.*?)\]\?
+  captures:
+    '0': {name: comment}
+    '1': {name: subtemplateCall}
+
+# - comment: optional word/var AKA word? OR $var?
+#   match: \$?(\w+)?\?
+#   captures:
+#     '0': {name: comment}
+
+- comment: wordform specification in round brackets, before subtemplate call AKA [---](---)
+  match: (\[)(.*?)(\]\()([^)]*?)(\))
+  captures:
+    '1': {name: wordformBrackets}
+    '2': {name: subtemplateCall}
+    '3': {name: wordformBrackets}
+    '4': {name: wordform}
+    '5': {name: wordformBrackets}
+
+- comment: subtemplate calls (in sq brackets)
+  match: \[([^]]*?)\]
+  captures:
+    '1': {name: subtemplateCall}
+
+- comment: wordform specification in round brackets, before word/var AKA word(---)
+  match: \$?(\w+)?\((.*?)\)
+  captures:
+    '0': {name: wordformBrackets}
+    '1': {name: wordformBrackets}
+    '2': {name: wordform}
+
+#------------------- other shit ------------------------
+
+- comment: all variables AKA $X
+  match: \$\w+
+  captures:
+    '0': {name: vardeclare}
+
+# - comment: function calls (in sq brackets)
+#   name: keyword
+#   match: \b(conj|p1|p2)\b

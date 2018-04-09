@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#-------- restarts the branch in current place ----------
+
+git branch -D $1
+git co -b $1

@@ -1,0 +1,4 @@
+{
+	"selector": "python.with.args",
+	"cmd": ["python", "$file", "README.md"]
+}

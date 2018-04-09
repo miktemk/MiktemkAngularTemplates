@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[[`${1:}`] ]]></content>
+	<tabTrigger>mdmm</tabTrigger>
+    <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+    <description>[`$some_code=0;`] used for MD animation</description>
+</snippet>

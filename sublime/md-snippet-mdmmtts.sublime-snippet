@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<tts lang="ru">${1:блять}</tts> ]]></content>
+	<tabTrigger>mdmmtts</tabTrigger>
+    <scope>text.html.markdown.multimarkdown, text.html.markdown</scope>
+    <description>&lt;tts lang="ru" &gt;suka&lt;/tts&gt; used for MD animation</description>
+</snippet>

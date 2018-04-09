@@ -1,0 +1,4 @@
+grevert
+git clean -d -f
+git tag --delete v$(git log -1 --pretty=%B)
+gcundo1

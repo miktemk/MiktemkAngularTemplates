@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+# .... make a dir for output file(s) if it does not exista
+${1:dirOut} = os.path.dirname(${2:fnameOut})
+if not os.path.exists(${1:dirOut}):
+    os.makedirs(${1:dirOut})
+]]></content>
+	<tabTrigger>pymkdirforfile</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail make a dir for output file(s) if it does not exista</description>
+</snippet>

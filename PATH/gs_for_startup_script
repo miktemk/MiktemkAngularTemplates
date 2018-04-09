@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if gs | grep -q 'nothing to commit, working tree clean'; then
+	echo "Rebase done of $1, everything OK"
+else
+	echo "$(tput setaf 1)Shit broke during rebase of $(tput setab 7)$1$(tput sgr 0). Press ENTER to fix"
+	read
+	start bash
+fi
