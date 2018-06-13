@@ -70,4 +70,5 @@
       // ^^ providing just an array sets the VS Code file type
     },
     "gitlens.keymap": "alternate",
+    "gitlens.historyExplorer.enabled": true,
   }

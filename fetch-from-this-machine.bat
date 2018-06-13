@@ -11,5 +11,5 @@ XCOPY /i/y/E "C:\_mik\BATCH"       ".\PATH"
 rem ROBOCOPY /S /E "C:\_mik\BATCH"       ".\PATH"
 
 XCOPY /i/y/E "%APPDATA%\Sublime Text 3\Packages\User"       ".\sublime"
-rmdir /s /q ".\sublime\"
+rmdir /s /q ".\sublime\Package Control.cache"
 

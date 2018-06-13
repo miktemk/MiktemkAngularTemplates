@@ -1,0 +1,2 @@
+#!/bin/sh
+git commit --author="Mikhail Temkine <miktemk@gmail.com>" -m "$1"
