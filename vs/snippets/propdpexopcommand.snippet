@@ -37,7 +37,7 @@
         </Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[
-#region -------------- $exopFunction$ ----------------
+#region -------------- EXOP: $exopFunction$ ----------------
 
 public void $exopFunction$($paramType$ data)
 {
@@ -57,16 +57,7 @@ public ICommand On$exopFunction$
 // Using a DependencyProperty as the backing store for On$exopFunction$.  This enables animation, styling, binding, etc...
 public static readonly DependencyProperty On$exopFunction$Property = 
     DependencyProperty.Register("On$exopFunction$", typeof(ICommand), typeof($ownerclass$),
-                new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsRender, OnOn$exopFunction$PropertyChanged));
-
-private static void OnOn$exopFunction$PropertyChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
-{
-    var control = sender as $ownerclass$;
-    if (control != null)
-        control.OnOn$exopFunction$Changed((ICommand)e.OldValue, (ICommand)e.NewValue);
-}
-
-private void OnOn$exopFunction$Changed(ICommand oldValue, ICommand newValue) {}
+                new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsRender));
 
 #endregion
 $end$]]></Code>

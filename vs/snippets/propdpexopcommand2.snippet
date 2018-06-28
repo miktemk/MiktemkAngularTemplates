@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>propdp + for cefSharp exop: exinvoker command</Title>
+      <Author>Mikhail Temkine</Author>
+      <Description>Code snippet for a property using DependencyProperty as the backing store</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propdpexopcommand</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>exopFunction</ID>
+          <ToolTip>Exop function name</ToolTip>
+          <Default>MyExopFunction</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ownerclass</ID>
+          <ToolTip>The owning class of this Property.  Typically the class that it is declared in.</ToolTip>
+          <Default>ownerclass</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>paramType</ID>
+          <ToolTip>Type of argument for the exop function.</ToolTip>
+          <Default>object</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[
+#region -------------- EXOP: $exopFunction$ ----------------
+
+public void $exopFunction$($paramType$ data)
+{
+    this.Dispatcher.Invoke(() =>
+    {
+        if (On$exopFunction$ != null)
+            On$exopFunction$.Execute(data);
+    });
+}
+
+public ICommand On$exopFunction$
+{
+    get { return (ICommand)GetValue(On$exopFunction$Property); }
+    set { SetValue(On$exopFunction$Property, value); }
+}
+
+// Using a DependencyProperty as the backing store for On$exopFunction$.  This enables animation, styling, binding, etc...
+public static readonly DependencyProperty On$exopFunction$Property = 
+    DependencyProperty.Register("On$exopFunction$", typeof(ICommand), typeof($ownerclass$),
+                new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.AffectsRender, OnOn$exopFunction$PropertyChanged));
+
+private static void OnOn$exopFunction$PropertyChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
+{
+    var control = sender as $ownerclass$;
+    if (control != null)
+        control.OnOn$exopFunction$Changed((ICommand)e.OldValue, (ICommand)e.NewValue);
+}
+
+private void OnOn$exopFunction$Changed(ICommand oldValue, ICommand newValue) {}
+
+#endregion
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

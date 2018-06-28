@@ -13,3 +13,7 @@ rem ROBOCOPY /S /E "C:\_mik\BATCH"       ".\PATH"
 XCOPY /i/y/E "%APPDATA%\Sublime Text 3\Packages\User"       ".\sublime"
 rmdir /s /q ".\sublime\Package Control.cache"
 
+XCOPY /i/y "%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets"           .\vs\snippets
+XCOPY /i/y "%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\*.zip"           .\vs\templates
+
+
