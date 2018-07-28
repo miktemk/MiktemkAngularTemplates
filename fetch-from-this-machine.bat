@@ -16,4 +16,4 @@ rmdir /s /q ".\sublime\Package Control.cache"
 XCOPY /i/y "%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets"           .\vs\snippets
 XCOPY /i/y "%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates\*.zip"           .\vs\templates
 
-
+exit

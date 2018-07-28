@@ -119,6 +119,13 @@
     ],
     "description": "import * as moment from 'moment';"
   },
+  "import-exop": {
+    "prefix": "import-exop",
+    "body": [
+      "import * as EXOP from 'core/gen/exop';"
+    ],
+    "description": "import * as EXOP from 'core/gen/exop';"
+  },
   "hgb-dialog-confirm": {
     "prefix": "hgb-dialog-confirm",
     "body": [

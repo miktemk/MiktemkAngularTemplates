@@ -23,7 +23,10 @@
 	
 	// tmp
 	{ "keys": [ "ctrl+alt+l" ], "command": "find_latinica_errors" },
+
+	{ "keys": ["alt+shift+r"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
 	
+	{ "keys": ["ctrl+shift+u"], "command": "generate_uuid", "args": { "firstUuidGroup": true } },
 
 	// { "keys":["ctrl+shift+b"] , 
 	//     "caption": "SublimeREPL: Python - RUN current file",

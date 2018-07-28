@@ -1,2 +1,2 @@
 #!/bin/sh
-git commit -a --amend --no-edit
+git add -A && git commit -a --amend --no-edit
