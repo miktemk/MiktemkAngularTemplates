@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# gricnow stands for Git interactive rebase commit as if NOW
+
+greset1
+git commit -m "$(cat .git/rebase-merge/message)"
+git rebase --continue
