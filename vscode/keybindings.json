@@ -39,14 +39,6 @@
         "command": "-workbench.action.files.saveAll"
     },
     {
-      "key": "ctrl+shift+u",
-      "command": "-workbench.action.output.toggleOutput"
-    },
-    {
-      "key": "ctrl+shift+u",
-      "command": "miktemk.generateShortGuid"
-    },
-    {
       "key": "ctrl+shift+d",
       "command": "-workbench.view.debug"
     },
