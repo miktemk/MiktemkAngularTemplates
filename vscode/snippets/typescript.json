@@ -122,9 +122,9 @@
   "import-exop": {
     "prefix": "import-exop",
     "body": [
-      "import * as EXOP from 'core/gen/exop';"
+      "import * as EXOP from 'gen/exop';"
     ],
-    "description": "import * as EXOP from 'core/gen/exop';"
+    "description": "import * as EXOP from 'gen/exop';"
   },
   "hgb-dialog-confirm": {
     "prefix": "hgb-dialog-confirm",

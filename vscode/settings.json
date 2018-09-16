@@ -4,6 +4,10 @@
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "workbench.iconTheme": "easy-icons",
     "editor.wordSeparators": "`~!-@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "[css]": {
+      "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+      "editor.tabSize": 2
+    },
     "[less]": {
         "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
         "editor.tabSize": 2
