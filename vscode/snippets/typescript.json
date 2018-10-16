@@ -101,9 +101,9 @@
   "import-gtarest": {
     "prefix": "import-gtarest",
     "body": [
-      "import * as GTARest from 'core/gen/gta-rest.service';"
+      "import * as GTARest from 'core/gen/gtarest';"
     ],
-    "description": "import * as GTARest from 'core/gen/gta-rest.service';"
+    "description": "import * as GTARest from 'core/gen/gtarest';"
   },
   "import-lodash": {
     "prefix": "import-lodash",

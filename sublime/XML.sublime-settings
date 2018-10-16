@@ -2,7 +2,8 @@
 	"extensions":
 	[
 		"xaml",
-		"xshd"
+		"xshd",
+		"csproj"
 	],
 	"hidden_extensions":
 	[

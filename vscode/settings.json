@@ -75,4 +75,5 @@
     },
     "gitlens.keymap": "alternate",
     "gitlens.historyExplorer.enabled": true,
+    "breadcrumbs.enabled": true,
   }
