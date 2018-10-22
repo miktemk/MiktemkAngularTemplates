@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\GitExtensions\gitex" viewpatch %1
