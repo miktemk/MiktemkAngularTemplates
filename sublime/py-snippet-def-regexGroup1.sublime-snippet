@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+def regexFindGroup1(regex, text):
+	mo = re.search(regex, text)
+	if mo == None:
+		return None
+	return mo.group(1)
+def regexFindGroup1_multiline(regex, text):
+	mo = re.search(regex, text, re.DOTALL)
+	if mo == None:
+		return None
+	return mo.group(1)
+]]></content>
+	<tabTrigger>pydefregroup1</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's def regexFindGroup1</description>
+</snippet>

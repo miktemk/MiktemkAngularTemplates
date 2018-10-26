@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+${1:procName}_handle = subprocess.Popen(${1:procName}_cmdStr, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+${1:procName}_stdout, ${1:procName}_stderr = ${1:procName}_handle.communicate()
+print (${1:procName}_stdout)
+print (${1:procName}_stderr)
+]]></content>
+	<tabTrigger>pyrunprocess</tabTrigger>
+    <scope>source.python</scope>
+    <description>Mikhail's run run process snippet</description>
+</snippet>
