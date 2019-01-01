@@ -50,5 +50,12 @@
 			"}"
 		],
 		"description": "except for the width the following is an immitation of BS grid"
+  },
+  "bbbb": {
+		"prefix": "bbbb",
+		"body": [
+			"border: 1px solid #ccc;"
+		],
+		"description": "border: 1px solid #ccc;"
 	}
 }

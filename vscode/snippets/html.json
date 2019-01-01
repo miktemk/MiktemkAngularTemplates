@@ -35,6 +35,20 @@
     ],
     "description": "djjj | json"
   },
+  "debug-json-hgb": {
+    "prefix": "ddjj",
+    "body": [
+      "<hgb-debug-json [vm]=\"$1\" vmName=\"$1\"></hgb-debug-json>"
+    ],
+    "description": "ddjj | <hgb-debug-json..."
+  },
+  "debug-json-longer": {
+    "prefix": "djjj",
+    "body": [
+      "<pre ng-bind-html=\"$1 | json | simpleHighlight: '${2:somestr}'\"></pre>"
+    ],
+    "description": "djjj | json"
+  },
   "debug-json2": {
     "prefix": "djjj2",
     "body": [

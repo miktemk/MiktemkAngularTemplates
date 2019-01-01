@@ -36,6 +36,13 @@
     ],
     "description": "setTimeout stub"
   },
+  "rrrr": {
+    "prefix": "rrrr",
+    "body": [
+      "Math.floor(Math.random() * $1)"
+    ],
+    "description": "random integer"
+  },
   "ctor": {
     "prefix": "ctor",
     "body": [
@@ -136,6 +143,31 @@
       "});"
     ],
     "description": "hgbDialogService.openConfirmDialog..."
+  },
+  "region": {
+    "prefix": "region",
+    "body": [
+      "//#region --------------------------- $1 ----------------------------",
+      "",
+      "//#endregion",
+    ],
+    "description": "#region ... #endregion"
+  },
+  "phaser-kbcallbacks": {
+    "prefix": "phaser-kbcallbacks",
+    "body": [
+      "game.input.keyboard.addCallbacks(game, (e:KeyboardEvent) => {",
+      "  // console.log(`KB: down`, e);",
+      "  if (e.keyCode == Phaser.KeyCode.SPACEBAR) {",
+      "    console.log(`Pew pew!!`);",
+      "  }",
+      "}, (e:KeyboardEvent) => {",
+      "  // console.log(`up`, e);",
+      "}, (keyText:string) => {",
+      "  // console.log(`press`, keyText);",
+      "});",
+    ],
+    "description": "game.input.keyboard.addCallbacks(..."
   }
   
 
