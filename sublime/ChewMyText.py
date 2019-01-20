@@ -65,13 +65,17 @@ class ChewMyTextCommand(sublime_plugin.TextCommand):
         # text = self.RoundAllDecimalNumbers(text)
 
         #.... SVG: LeshyLabs - apply coordinate reduction
-        widthBefore = 2413
-        widthAfter = 800
+        widthBefore = 3620
+        widthAfter = 1200
         reductionFactor = float(widthAfter) / widthBefore
         # LINK: https://regex101.com/r/Yj99Mo/1
         text = self.MultiplyAllNumbersInRegexGroups(text, r'"x":(\d+),"y":(\d+),"w":(\d+),"h":(\d+)', reductionFactor)
         # LINK: https://regex101.com/r/Yj99Mo/3
         text = self.MultiplyAllNumbersInRegexGroups(text, r'{"w":(\d+),"h":(\d+)}', reductionFactor)
 
+        #.... BASIC: do several string replacements
+        text = text.replace("CreateWorkspace", "AssignToWorkspace")
+        text = text.replace("create-workspace", "assign-to-workspace")
+        text = text.replace("Create workspace", "Assign to workspace")
 
         return text
