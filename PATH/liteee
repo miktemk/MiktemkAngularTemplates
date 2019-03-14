@@ -1,0 +1,3 @@
+#!/bin/sh
+
+lite-server -c lite-server-config.json

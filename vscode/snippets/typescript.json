@@ -20,6 +20,34 @@
     ],
     "description": "debugger;"
   },
+  "lll": {
+    "prefix": "lll",
+    "body": [
+      "//-------------------------------------------------------------------------------------------------------------------------------------"
+    ],
+    "description": "--------------------"
+  },
+  "llla": {
+    "prefix": "llla",
+    "body": [
+      "//------------------------------------- $1 ------------------------------------------------------------------------------------------------"
+    ],
+    "description": "---------- AAA ----------"
+  },
+  "llll": {
+    "prefix": "llll",
+    "body": [
+      "//====================================================================================================================================="
+    ],
+    "description": "===================="
+  },
+  "lllla": {
+    "prefix": "lllla",
+    "body": [
+      "//===================================== $1 ================================================================================================"
+    ],
+    "description": "========== AAA =========="
+  },
   "ddds": {
     "prefix": "ddds",
     "body": [
@@ -106,32 +134,32 @@
     "description": "starter pipe"
   },
   "import-gtarest": {
-    "prefix": "import-gtarest",
+    "prefix": "iii-gtarest",
+    "description": "import * as GTARest from 'core/gen/gtarest';",
     "body": [
       "import * as GTARest from 'core/gen/gtarest';"
-    ],
-    "description": "import * as GTARest from 'core/gen/gtarest';"
+    ]
   },
   "import-lodash": {
-    "prefix": "import-lodash",
+    "prefix": "iii-lodash",
+    "description": "import * as _ from 'lodash';",
     "body": [
       "import * as _ from 'lodash';"
-    ],
-    "description": "import * as _ from 'lodash';"
+    ]
   },
   "import-moment": {
-    "prefix": "import-moment",
+    "prefix": "iii-moment",
+    "description": "import * as moment from 'moment';",
     "body": [
       "import * as moment from 'moment';"
-    ],
-    "description": "import * as moment from 'moment';"
+    ]
   },
   "import-exop": {
-    "prefix": "import-exop",
+    "prefix": "iii-exop",
+    "description": "import * as EXOP from 'gen/exop';",
     "body": [
       "import * as EXOP from 'gen/exop';"
-    ],
-    "description": "import * as EXOP from 'gen/exop';"
+    ]
   },
   "hgb-dialog-confirm": {
     "prefix": "hgb-dialog-confirm",

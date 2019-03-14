@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+[user]
+	email = mtemkine@hellogbye.com
+	name = hgb-mtemkine
+]]></content>
+	<tabTrigger>git-hgbuser</tabTrigger>
+    <scope></scope>
+    <description>Mikhail's datetime sample</description>
+</snippet>
