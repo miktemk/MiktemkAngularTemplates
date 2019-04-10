@@ -20,6 +20,22 @@
     ],
     "description": "debugger;"
   },
+  "aaai": {
+    "prefix": "aaai",
+    "body": [
+      "@Input()",
+      "$1:$2;"
+    ],
+    "description": "@Input()..."
+  },
+  "aaao": {
+    "prefix": "aaao",
+    "body": [
+      "@Output()",
+      "$1 = new EventEmitter<$2>();",
+    ],
+    "description": "@Output()..."
+  },
   "lll": {
     "prefix": "lll",
     "body": [
@@ -159,6 +175,13 @@
     "description": "import * as EXOP from 'gen/exop';",
     "body": [
       "import * as EXOP from 'gen/exop';"
+    ]
+  },
+  "renv": {
+    "prefix": "renv",
+    "description": "readonly ENV = environment;",
+    "body": [
+      "readonly ENV = environment;"
     ]
   },
   "hgb-dialog-confirm": {

@@ -23,15 +23,15 @@
   "workbench.iconTheme": "easy-icons",
   "editor.wordSeparators": "`~!-@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "[css]": {
-    "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordSeparators": "`~!%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.tabSize": 2
   },
   "[less]": {
-    "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordSeparators": "`~!%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.tabSize": 2
   },
   "[scss]": {
-    "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordSeparators": "`~!%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.tabSize": 2
   },
   "[html]": {

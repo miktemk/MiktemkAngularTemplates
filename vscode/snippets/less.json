@@ -85,5 +85,14 @@
       "//===================================== $1 ================================================================================================"
     ],
     "description": "========== AAA =========="
+  },
+  "nowrap": {
+		"prefix": "nowrap",
+    "description": "white-space: nowrap/ellipsis",
+		"body": [
+      "white-space: nowrap;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;"
+		]
   }
 }
