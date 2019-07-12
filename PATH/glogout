@@ -1,4 +1,6 @@
 #!/bin/sh
 
 cmdkey /delete:git:https://github.com
+cmdkey /delete:git:https://miktemk@bitbucket.org
+find $USERPROFILE\\.git-credentials
 rm -rf $USERPROFILE\\.git-credentials

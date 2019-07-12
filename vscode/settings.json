@@ -37,6 +37,10 @@
   "[html]": {
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
   },
+  "[javascript]": {
+    "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.tabSize": 2
+  },
   "[typescript]": {
     "editor.wordSeparators": "`~!#%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.tabSize": 2
@@ -50,9 +54,7 @@
     "editor.tabSize": 2
   },
   "window.zoomLevel": -1,
-  "vsicons.projectDetection.disableDetect": true,
   //"typescript.check.tscVersion": false,
-  "vsicons.dontShowNewVersionMessage": true,
   "editor.renderWhitespace": "all",
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -108,4 +110,8 @@
   "gitlens.historyExplorer.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "html.format.wrapLineLength": 99999,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.port": 4200,
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsicons.projectDetection.disableDetect": true
 }

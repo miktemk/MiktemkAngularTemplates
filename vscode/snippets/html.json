@@ -21,6 +21,13 @@
     ],
     "description": "djj | json"
   },
+  "debug-json-4": {
+    "prefix": "djjjj",
+    "body": [
+      "<textarea (click)=\"\\$event.target.select()\" rows=\"10\" style=\"width: 100%;\">{{ $1 | json }}</textarea>"
+    ],
+    "description": "djjjj | json"
+  },
   "debug-json-title": {
     "prefix": "djj2",
     "body": [
