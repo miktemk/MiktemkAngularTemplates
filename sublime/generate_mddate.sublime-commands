@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "mddate: Generate today's date for diary",
+        "command": "generate_mddate"
+    }
+]

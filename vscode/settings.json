@@ -113,5 +113,7 @@
   "liveServer.settings.host": "localhost",
   "liveServer.settings.port": 4200,
   "vsicons.dontShowNewVersionMessage": true,
-  "vsicons.projectDetection.disableDetect": true
+  "vsicons.projectDetection.disableDetect": true,
+  "svg.preview.autoOpen": true,
+  "svg.preview.boundingBox": true
 }
