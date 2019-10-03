@@ -204,6 +204,14 @@
     ],
     "description": "#region ... #endregion"
   },
+  "typename": {
+    "prefix": "typename",
+    "body": [
+      "export const $1 = GTARest.$1;",
+      "export type $1 = GTARest.$1;"
+    ],
+    "description": "export const/export type"
+  },
   "phaser-kbcallbacks": {
     "prefix": "phaser-kbcallbacks",
     "body": [

@@ -45,5 +45,19 @@
     {
       "key": "ctrl+shift+d",
       "command": "editor.action.copyLinesDownAction"
+    },
+    {
+      "key": "ctrl+\\",
+      "command": "workbench.action.terminal.split",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "ctrl+shift+5",
+      "command": "-workbench.action.terminal.split",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "ctrl+alt+w",
+      "command": "workbench.action.closeOtherEditors"
     }
   ]

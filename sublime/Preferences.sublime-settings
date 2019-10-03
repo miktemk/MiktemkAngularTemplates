@@ -7,5 +7,6 @@
 		"Markdown",
 		"Vintage"
 	],
-	"show_encoding": true
+	"show_encoding": true,
+	"tab_size": 4
 }
