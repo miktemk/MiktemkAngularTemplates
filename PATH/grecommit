@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#-------- recommits, this will trigger hooks, if any, on all files ----------
+
+commitId=$(git rev-parse --verify HEAD)
+git reset --soft HEAD^
+git commit --reuse-message=$commitId --reset-author
